@@ -14,7 +14,7 @@ func main() {
 		sub.Sub()
 	}()
 
-	log.Println("yuhuu coba lagi")
+	log.Println("yuhuu coba romhhh")
 
 	log.Println("yuhuu coba")
 

@@ -14,6 +14,10 @@ func main() {
 		sub.Sub()
 	}()
 
+	log.Println("yuhuu coba")
+
+	log.Println("yuhuu coba")
+
 	log.Println("main")
 	app.Post("/", func(c *fiber.Ctx) error {
 		pub.Pub()

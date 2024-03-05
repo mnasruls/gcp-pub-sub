@@ -3,6 +3,7 @@ package main
 import (
 	pub "gcp-pub-sub/publisher"
 	sub "gcp-pub-sub/subscriber"
+	"log"
 
 	"github.com/gofiber/fiber/v2"
 )
@@ -12,6 +13,8 @@ func main() {
 	go func() {
 		sub.Sub()
 	}()
+
+	log.Println("yuhuu coba")
 
 	app.Post("/", func(c *fiber.Ctx) error {
 		pub.Pub()
